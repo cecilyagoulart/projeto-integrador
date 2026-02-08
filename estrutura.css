@@ -1,0 +1,146 @@
+/* ===============================
+   ESTRUTURA ATÔMICA
+   =============================== */
+
+.conteudo {
+    max-width: 900px;
+    margin: 4em auto;
+    padding: 0 1.5em;
+    animation: fadeIn 1s ease;
+}
+
+/* ANIMAÇÃO GERAL */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* TÍTULO PRINCIPAL */
+.conteudo h2 {
+    text-align: center;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+    color: #252122;
+    animation: fadeIn 1.2s ease;
+}
+
+/* SUBTÍTULOS */
+.conteudo h3 {
+    margin-top: 2.5em;
+    margin-bottom: 0.8em;
+    font-size: 1.4em;
+    color: #e53359;
+    position: relative;
+    display: inline-block;
+}
+
+/* Linha animada abaixo do subtítulo */
+.conteudo h3::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    background: #e53359;
+    margin-top: 6px;
+    transition: 0.4s;
+}
+
+.conteudo h3:hover::after {
+    width: 100%;
+}
+
+/* PARÁGRAFOS */
+.conteudo p {
+    line-height: 1.8;
+    margin-bottom: 1.2em;
+    font-size: 1rem;
+    color: #444;
+}
+
+/* LISTAS */
+.conteudo ul {
+    margin: 1em 0 1.5em 1.5em;
+}
+
+.conteudo li {
+    margin-bottom: 0.7em;
+    line-height: 1.7;
+}
+
+/* DIVISOR */
+.divisor {
+    width: 60px;
+    height: 4px;
+    background: #e53359;
+    margin: 2.5em auto;
+    border-radius: 3px;
+    animation: expand 1.2s ease;
+}
+
+@keyframes expand {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+    to {
+        width: 60px;
+        opacity: 1;
+    }
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2em;
+    margin: 3em 0;
+}
+
+.card {
+    background: #ffffff;
+    padding: 2em;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+    animation: fadeIn 1s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.card i {
+    font-size: 3em;
+    color: #e53359;
+    margin-bottom: 0.6em;
+    transition: 0.3s;
+}
+
+.card:hover i {
+    transform: scale(1.1);
+}
+
+/* BLOCO FINAL */
+.destaque-final {
+    background: #f7f7f7;
+    padding: 2em;
+    border-left: 6px solid #e53359;
+    border-radius: 8px;
+    margin-top: 3em;
+    animation: fadeIn 1.4s ease;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}

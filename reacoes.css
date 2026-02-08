@@ -1,0 +1,86 @@
+.conteudo {
+    max-width: 1000px;
+    margin: 3em auto;
+    padding: 0 1.5em;
+}
+
+.explicacao {
+    margin-bottom: 3em;
+}
+
+.explicacao h3 {
+    margin-bottom: 0.8em;
+    color: #252122;
+    font-size: 1.5em;
+}
+
+.explicacao p {
+    line-height: 1.8;
+    margin-bottom: 1em;
+    color: #444;
+}
+
+.divisor {
+    width: 80px;
+    height: 4px;
+    background: #e53359;
+    margin: 2.5em auto;
+    border-radius: 2px;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 2em;
+    margin-bottom: 3em;
+}
+
+.card {
+    background: #fff;
+    padding: 2em;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card i {
+    font-size: 2.5em;
+    color: #e53359;
+    margin-bottom: 0.5em;
+}
+
+.card h3 {
+    margin-bottom: 0.5em;
+}
+
+.equacao {
+    font-weight: bold;
+    margin-top: 0.5em;
+    color: #e53359;
+}
+
+.equacao-grande {
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+    margin: 1em 0;
+    color: #e53359;
+}
+
+.exercicio {
+    background: #f7f7f7;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.resposta {
+    margin-top: 1em;
+    font-weight: bold;
+    color: #2a9d3f;
+}

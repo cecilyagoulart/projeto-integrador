@@ -1,0 +1,139 @@
+/* ===============================
+   TABELA PERIÓDICA
+   =============================== */
+
+.conteudo {
+    max-width: 1100px;
+    margin: 3em auto;
+    padding: 0 1.5em;
+}
+
+/* EXPLICAÇÕES */
+.explicacao {
+    margin-bottom: 3em;
+}
+
+.explicacao h3 {
+    margin-bottom: 0.8em;
+    color: #c13a5c;
+}
+
+.explicacao p {
+    line-height: 1.7;
+    margin-bottom: 1em;
+    
+}
+
+.explicacao ul {
+    margin-left: 1.2em;
+}
+
+.explicacao li {
+    margin-bottom: 0.6em;
+}
+
+/* MINI TABELA */
+.mini-tabela {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 3em;
+}
+
+.elemento {
+    width: 100px;
+    height: 120px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    position: relative;
+    transition: 0.3s;
+}
+
+.elemento:hover {
+    transform: scale(1.05);
+}
+
+.elemento span {
+    font-size: 0.8em;
+    position: absolute;
+    top: 5px;
+    left: 8px;
+}
+
+.elemento strong {
+    font-size: 2em;
+    display: block;
+    margin-top: 25px;
+}
+
+.elemento p {
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+/* CORES */
+.metal {
+    background: #e53359;
+}
+
+.ametal {
+    background: #57912b;
+}
+
+.gas-nobre {
+    background: #3a86ff;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2em;
+    margin-bottom: 3em;
+}
+
+.card {
+    background: #ddbbc6;
+    padding: 2em;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card i {
+    font-size: 2.8em;
+    color: #e53359;
+    margin-bottom: 0.5em;
+}
+
+.card h3 {
+    margin-bottom: 0.5em;
+}
+
+.card p {
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+/* DESTAQUE */
+.destaque-final {
+    background: #bab9b9;
+    padding: 2em;
+    border-left: 6px solid #e53359;
+    border-radius: 8px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
